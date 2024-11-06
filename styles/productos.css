@@ -30,11 +30,15 @@ main {
     height: 32px;
     padding-top: 5px;
     padding-bottom: 5px;
+
 }
 
 .nav-links a {
+    display: flex;
+    justify-content: space-around;
     text-decoration: none;
     color: var(--negro);
+
 }
 
 .button {
@@ -64,12 +68,12 @@ h1 {
 .container p, h3 {
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .dog-img {
     width: 315px;
     height: 232px;
-    align-self: center;
 }
 
 
