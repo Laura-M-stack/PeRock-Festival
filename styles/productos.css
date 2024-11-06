@@ -12,10 +12,10 @@
 
         }
         
-        * {
-            font-family: "Montserrat";
+ * {
+    font-family: "Montserrat";
+    }
 
-        }
 main {
     background-color: var(--azul-profundo);
     color: var(--blanco);
@@ -74,6 +74,7 @@ h1 {
 .dog-img {
     width: 315px;
     height: 232px;
+    margin: auto;
 }
 
 
