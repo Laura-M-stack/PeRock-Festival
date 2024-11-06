@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root { --azul-profundo: #000a57;
+        --verde-brillante: #74f78d;
+        --blanco: #ffffff;
+        --gris-claro: #d1d0d7;
+        --agua: #6cdfea;
+        --verde-sereno: #83af9b;
+        --negro: #000000;
+        --acordeón: #00073a;
+        --rojo-carmesi:#ed0131;
+
+        }
+        
+        * {
+            font-family: "Montserrat";
+
+        }
+main {
+    background-color: var(--azul-profundo);
+    color: var(--blanco);
+    width: 100%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, --negro, --azul-profundo);
+    height: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.nav-links a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: var(--negro);
+
+}
+
+.button {
+    padding: 20px 25px;
+    border-radius: 8px;
+    background-color: var(--verde-brillante);
+    font-weight:600;
+    font-size: medium;
+    border: none;
+    
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container p, h3 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.dog-img {
+    width: 315px;
+    height: 232px;
+}
+
+
+.moodboard {
+    width: 427px;
+    height: 650px;
+    margin-bottom: 50px;
+}
