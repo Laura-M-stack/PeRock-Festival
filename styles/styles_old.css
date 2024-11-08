@@ -40,7 +40,7 @@ h1, h2, h3, p, .footer {
 }
 
 h1, h2, h3 {
-    margin-bottom: clamp(1rem, 1.2vw, 1.2rem);
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -86,12 +86,12 @@ p {
 }
 
 .logo {
-    height: clamp(40px, 5vw, 50px);
+    height: 40px;
 }
 
 .nav-links {
     display: flex;
-    gap: clamp(2rem, 2.5vw, 3rem);
+    gap: 2rem;
 }
 
 .nav-links a {
@@ -107,23 +107,12 @@ p {
     text-decoration: underline;
 }
 
-.button {
-	align-self: center;
-    padding: 20px 25px;
-    border-radius: 8px;
-    background-color: var(--verde-brillante);
-    font-weight:600;
-    font-size: medium;
-    border: none;
-    
-}
-
 /* ==========================================================================
    4. Sección Hero
    ========================================================================== */
 .hero {
     text-align: center;
-    padding: clamp(4rem, 5vw, 6rem) clamp(2rem, 3vw, 4rem);
+    padding: 4rem 2rem;
     background: var(--azul-profundo), url('images/pixlr-image-generator-e5698ed6-16aa-4571-8b39-0530cd0c1f3c.png');
     background-size: cover;
 }
@@ -135,80 +124,80 @@ p {
 .polaroid-container {
     display: flex;
     justify-content: center;
-    gap: clamp(2rem, 2.5vw, 3rem);
+    gap: 2rem;
     flex-wrap: wrap;
-    margin: clamp(2rem, 2.5vw, 3rem) 0;
+    margin: 2rem 0;
 }
 
 .polaroid {
     background: white;
-    padding: clamp(1rem, 1.2vw, 1.4rem);
-    transform: rotate(clamp(-5deg, -5.5deg, -6deg));
-    box-shadow: 0 clamp(4px, 0.5vw, 6px) clamp(8px, 1vw, 12px) rgba(0,0,0,0.3);
+    padding: 1rem;
+    transform: rotate(-5deg);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .polaroid img {
-    width: clamp(200px, 18vw, 220px);
-    height: clamp(200px, 18vw, 220px);
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 
 /* Botones */
 .button {
-    background-color: var(--verde-brillante);
+    background-color: var(--accent-green);
     color: white;
-    padding: clamp(1rem, 1.2vw, 1.4rem) clamp(2rem, 2.5vw, 3rem);
-    border-radius: clamp(25px, 3vw, 35px);
+    padding: 1rem 2rem;
+    border-radius: 25px;
     text-decoration: none;
     display: inline-block;
-    margin: clamp(1rem, 1.2vw, 1.4rem) 0;
+    margin: 1rem 0;
 }
 
 /* Secciones Generales */
 .section {
-    padding: clamp(4rem, 5vw, 6rem) clamp(2rem, 3vw, 4rem);
+    padding: 4rem 2rem;
 }
 
 /* Grid Ambiental */
 .environmental-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 25vw, 300px), 1fr));
-    gap: clamp(2rem, 2.5vw, 3rem);
-    margin: clamp(2rem, 2.5vw, 3rem) 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
 /* Testimonios */
 .testimonials {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 20vw, 250px), 1fr));
-    gap: clamp(2rem, 2.5vw, 3rem);
-    padding: clamp(2rem, 2.5vw, 3rem);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .testimonial-card {
     text-align: center;
-    padding: clamp(1rem, 1.2vw, 1.4rem);
+    padding: 1rem;
 }
 
 .testimonial-card img {
-    width: clamp(100px, 10vw, 120px);
-    height: clamp(100px, 10vw, 120px);
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin-bottom: clamp(1rem, 1.2vw, 1.4rem);
+    margin-bottom: 1rem;
 }
 
 /* FAQ */
 .faq-section {
-    max-width: clamp(800px, 80vw, 900px);
+    max-width: 800px;
     margin: 0 auto;
-    padding: clamp(2rem, 2.5vw, 3rem);
+    padding: 2rem;
 }
 
 /* Mapa */
 .map-container {
     width: 100%;
-    height: clamp(300px, 30vw, 400px);
-    margin: clamp(2rem, 2.5vw, 3rem) 0;
+    height: 300px;
+    margin: 2rem 0;
 }
 
 /* ==========================================================================
@@ -216,13 +205,13 @@ p {
    ========================================================================== */
 footer {
     background: var(--agua);
-    padding: clamp(40px, 5vw, 60px) 0;
+    padding: 40px 0;
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 20vw, 250px), 1fr));
-    gap: clamp(30px, 4vw, 50px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
 }
 
 /* Estilos compartidos del footer */
@@ -242,12 +231,12 @@ footer span,
 }
 
 .footer-section h3 {
-    margin-bottom: clamp(20px, 2.5vw, 30px);
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
 .footer-section p {
-    margin-bottom: clamp(10px, 1.2vw, 14px);
+    margin-bottom: 10px;
 }
 
 .footer-section ul {
@@ -255,7 +244,7 @@ footer span,
 }
 
 .footer-section ul li {
-    margin-bottom: clamp(10px, 1.2vw, 14px);
+    margin-bottom: 10px;
 }
 
 .footer-section a {
@@ -269,12 +258,12 @@ footer span,
 .footer-bottom {
     text-align: center;
     padding-top: 0px;
-    margin-top: clamp(20px, 2.5vw, 30px);
+    margin-top: 20px;
 }
 
 .legal-links {
     text-align: center;
-    margin: clamp(10px, 1.2vw, 14px) 0;
+    margin: 10px 0;
 }
 
 .legal-links a:hover {
@@ -282,7 +271,7 @@ footer span,
 }
 
 .separator {
-    margin: 0 clamp(10px, 1.2vw, 14px);
+    margin: 0 10px;
 }
 
 /* ==========================================================================
