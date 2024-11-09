@@ -87,7 +87,7 @@ p {
 }
 
 .logo {
-    height: clamp(40px, 5vw, 50px);
+    height: clamp(45px, 5.3vw, 55px);
 }
 
 .nav-links {
@@ -110,7 +110,7 @@ p {
 
 .button {
 	align-self: center;
-    padding: 20px 25px;
+    padding: 18px 22px;
     border-radius: 8px;
     background-color: var(--verde-brillante);
     font-weight:600;
