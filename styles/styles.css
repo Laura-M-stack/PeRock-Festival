@@ -80,7 +80,7 @@ p {
 .navbar {
     background-color: rgba(0, 0, 0, 0.5);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,10,87,1) 100%); 
-    padding: clamp(1rem, 2vw, 2rem);
+    padding: clamp(0.4rem, 0.8vw, 1rem);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,11 +114,23 @@ p {
     border-radius: 8px;
     background-color: var(--verde-brillante);
     font-weight:600;
-    font-size: medium;
+    font-size: large;
     border: none;
     color: var(--negro);
     
 }
+
+.button:hover {
+
+    background-color: #56BB6A;
+}
+
+.button:focus {
+
+    background-color: #74F78D;
+    opacity: 46%;
+}
+
 
 /* ==========================================================================
    4. Sección Hero
@@ -126,7 +138,7 @@ p {
 .hero {
     text-align: center;
     padding: clamp(4rem, 5vw, 6rem) clamp(2rem, 3vw, 4rem);
-    background: var(--azul-profundo), url('images/pixlr-image-generator-e5698ed6-16aa-4571-8b39-0530cd0c1f3c.png');
+    background: var(--azul-profundo), url('/images/fondo_home.jpg');
     background-size: cover;
 }
 
@@ -158,12 +170,13 @@ p {
 /* Botones */
 .button {
     background-color: var(--verde-brillante);
-    color: white;
+    color: var(--negro);
     padding: clamp(1rem, 1.2vw, 1.4rem) clamp(2rem, 2.5vw, 3rem);
-    border-radius: clamp(25px, 3vw, 35px);
+    border-radius: clamp(15px, 1.5vw, 25px);
     text-decoration: none;
     display: inline-block;
     margin: clamp(1rem, 1.2vw, 1.4rem) 0;
+
 }
 
 /* Secciones Generales */
