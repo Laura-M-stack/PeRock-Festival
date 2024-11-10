@@ -61,18 +61,18 @@ h1 {
     padding-bottom: 50px;
 }
 
-.container {
+.container-products {
     display: flex;
     justify-content: space-evenly;
 }
 
-.right-content {
+.right-content-products {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
-.container p, h3 {
+.container-products p, h3 {
     justify-content: center;
     text-align: center;
     align-items: center;

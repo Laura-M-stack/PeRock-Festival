@@ -48,6 +48,7 @@ h1 {
     font-size: clamp(3.6rem, 4vw, 4rem);
     line-height: clamp(3.6rem, 4vw, 4rem);
     letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+    margin-top: clamp(1rem, 1.2vw, 1.2rem);;
 
 }
 
@@ -287,6 +288,19 @@ p {
     max-width: clamp(800px, 80vw, 900px);
     margin: 0 auto;
     padding: clamp(2rem, 2.5vw, 3rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+   
+}
+.details {
+    padding: clamp(1rem, 1.2vw, 1.4rem);
+};
+
+.summary {
+    padding: clamp(1rem, 1.2vw, 1.4rem);   
+}
+
+.answer {
+    padding: clamp(1rem, 1.2vw, 1.4rem);   
 }
 
 /* Mapa */
@@ -379,7 +393,7 @@ footer span,
 }
 
 /* ==========================================================================
-   7. Media Queries
+   8. Media Queries
    ========================================================================== */
 @media (max-width: 768px) {
     .grid-container,
@@ -402,3 +416,112 @@ footer span,
       width: clamp(250px, 80vw, 300px);
     }
   }
+
+  /* ==========================================================================
+   8. Página Artistas
+   ========================================================================== */
+
+   .contenedor3d{
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 186px;
+	height: 116px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border: solid 2px black;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+.img-art {
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.img-art:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+   /* ==========================================================================
+   9. Página Productos
+   ========================================================================== */
+   
+   .container-products {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right-content-products {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.container-products p, h3 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.dog-img {
+	align-self: center;
+    width: 315px;
+    height: 232px;
+    margin: auto;
+}
+
+
+.moodboard {
+    width: 427px;
+    height: 650px;
+    margin-bottom: 50px;
+}
+
+   /* ==========================================================================
+   10. Página Nosotros
+   ========================================================================== */
+
+
+   /* ==========================================================================
+   11. Página Actividades
+   ========================================================================== */
+
+
+   /* ==========================================================================
+   12. Página Error 404
+   ========================================================================== */
