@@ -421,62 +421,26 @@ footer span,
    8. Página Artistas
    ========================================================================== */
 
-   .contenedor3d{
-	margin: 4% auto;
-	width: 210px;
-	height: 140px;
-	position: relative;
-	perspective: 1000px;
-}
-#carousel{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	transform-style: preserve-3d;
-	animation: rotation 20s infinite linear;
-}
-#carousel:hover{
-	animation-play-state: paused;
-}
-#carousel figure{
-	display: block;
-	position: absolute;
-	width: 186px;
-	height: 116px;
-	left: 10px;
-	top: 10px;
-	background: black;
-	overflow: hidden;
-	border: solid 2px black;
-}
-#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
-#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
-#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
-#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
-#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
-#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
-#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
-#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
-#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
-
-.img-art {
-	-webkit-filter: grayscale(1);
-	cursor: pointer;
-	transition: all .5s ease;
-}
-.img-art:hover{
-	-webkit-filter: grayscale(0);
-  transform: scale(1.2,1.2);
-}
-
-@keyframes rotation{
-	from{
-		transform: rotateY(0deg);
-	}
-	to{
-		transform: rotateY(360deg);
-	}
-}
+   .slider-container {
+    display: flex;
+    width: 60%;
+    height: 80vh;
+    overflow-x:scroll;
+    align-items: center;
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-align: center;
+  }
+  
    /* ==========================================================================
    9. Página Productos
    ========================================================================== */
@@ -500,10 +464,12 @@ footer span,
 
 .dog-img {
 	align-self: center;
-    width: 315px;
+    width: 3oopx;
     height: 232px;
     margin: auto;
 }
+
+
 
 
 .moodboard {
@@ -525,3 +491,22 @@ footer span,
    /* ==========================================================================
    12. Página Error 404
    ========================================================================== */
+
+   .container-error {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin-top: 200px;
+   }
+
+   .error-left {
+    align-items: flex-start;
+   }
+
+   .error-left h1 {
+    font-size: 72px;
+   }
+
+   .error-right {
+    align-items:flex-end;
+   }
