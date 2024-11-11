@@ -264,8 +264,21 @@ p {
 .environmental-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 25vw, 300px), 1fr));
-    gap: clamp(2rem, 2.5vw, 3rem);
+    /*gap: clamp(2rem, 2.5vw, 3rem);*/
     margin: clamp(2rem, 2.5vw, 3rem) 0;
+}
+
+
+#env1 {
+display: flex;
+}
+
+#env2{
+display: flex;
+}
+
+#env3 {
+display: flex;
 }
 
 /* Testimonios */
