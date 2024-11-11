@@ -621,6 +621,13 @@ footer span,
     /* Vamos a añadir esto 👇 */
     scroll-snap-align: center;
   }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
    /* ==========================================================================
    9. Página Productos
