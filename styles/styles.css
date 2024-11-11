@@ -15,6 +15,7 @@
     --negro: #000000;
     --acordeón: #00073a;
     --rojo-carmesi: #ed0131;
+    --agua-80: rgba(108, 223, 234, 0.8);
     
     /* Tipografía base */
     font-size: 62.5%;
@@ -41,7 +42,8 @@ h1, h2, h3, p, .footer {
 }
 
 h1, h2, h3 {
-    margin-bottom: clamp(1rem, 1.2vw, 1.2rem);
+    margin-bottom: clamp(4rem, 4.2vw, 4.2rem);
+    margin-top: clamp(4rem, 4.2vw, 4.2rem);
 }
 
 h1 {
@@ -519,7 +521,7 @@ h2 {
    6. Footer
    ========================================================================== */
 footer {
-    background: var(--agua);
+    background: var(--agua-80);
     padding: clamp(40px, 5vw, 60px) 0;
 }
 
