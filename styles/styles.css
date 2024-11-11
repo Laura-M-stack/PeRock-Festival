@@ -492,13 +492,11 @@ h2 {
 footer {
     background: var(--agua);
     padding: clamp(40px, 5vw, 60px) 0;
-    margin-top: 100px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 20vw, 250px), 1fr));
-    gap: clamp(30px, 4vw, 50px);
 }
 
 /* Estilos compartidos del footer */
@@ -547,7 +545,6 @@ footer span,
 .footer-bottom {
     text-align: center;
     padding-top: 0px;
-    margin-top: clamp(20px, 2.5vw, 30px);
 }
 
 .legal-links {
