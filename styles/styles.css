@@ -315,8 +315,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
-    margin-top: 80px;
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 /*Voluntarios*/
@@ -708,7 +708,17 @@ footer span,
    11. Página Actividades
    ========================================================================== */
 
-
+.cards-container {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.actividades-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
    /* ==========================================================================
    12. Página Error 404
    ========================================================================== */
