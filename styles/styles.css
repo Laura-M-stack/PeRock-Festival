@@ -197,6 +197,8 @@ p {
    font-family: "Rock Salt";
    letter-spacing: 3px;
    justify-content: flex-start;
+   margin-top: 20px;
+   margin-bottom: 20px;
  }
  
  .festival-info {
