@@ -51,6 +51,7 @@ h1 {
     line-height: clamp(3.6rem, 4vw, 4rem);
     letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
     margin-top: clamp(1rem, 1.2vw, 1.2rem);
+    text-align: center;
 
 }
 
@@ -622,33 +623,37 @@ footer span,
   /* ==========================================================================
    8. Página Artistas
    ========================================================================== */
+   .mySlides {
+    display:none;
+   
+}
 
-   .slider-container {
-    display: flex;
-    width: 60%;
-    height: 80vh;
-    overflow-x:scroll;
-    align-items: center;
-  
-    /* Vamos a añadir esto 👇 */
-    scroll-snap-type: x mandatory;
-  }
-  
-  .slider-container img {
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-  
-    /* Vamos a añadir esto 👇 */
-    scroll-snap-align: center;
-  }
+   .w3-left, .w3-right, .w3-badge {
+    cursor:pointer;
+}
+   .w3-badge {
+    height:20px;
+    width:13px;
+    padding:0
+}
 
-  main {
+.artistas desc {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-  }
+    margin-bottom: 50px;
+}
+
+.art-img img {
+    width: 400px;
+    border-radius: 15px;
+    border: solid var(--verde-brillante) 2px;
+    
+}
+
+.art-text {
+    width: 300px;
+}
   
    /* ==========================================================================
    9. Página Productos
