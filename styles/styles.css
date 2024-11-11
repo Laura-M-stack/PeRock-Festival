@@ -196,6 +196,7 @@ p {
    margin-bottom: clamp(1rem, 3vw, 2rem);
    font-family: "Rock Salt";
    letter-spacing: 3px;
+   justify-content: flex-start;
  }
  
  .festival-info {
