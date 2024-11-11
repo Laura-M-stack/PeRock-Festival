@@ -532,10 +532,17 @@ footer span,
 
 .footer-section ul li {
     margin-bottom: clamp(10px, 1.2vw, 14px);
+    font-size: clamp(1.6rem, 2vw, 2rem);
+    line-height: clamp(2rem, 2.2vw, 2.2rem);
+    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
 }
 
 .footer-section a {
     text-decoration: none;
+    font-size: clamp(1.6rem, 2vw, 2rem);
+    line-height: clamp(2rem, 2.2vw, 2.2rem);
+    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+
 }
 
 .footer-section a:hover {
