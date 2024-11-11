@@ -253,6 +253,7 @@ p {
 /* Secciones Generales */
 .section {
     padding: clamp(4rem, 5vw, 6rem) clamp(2rem, 3vw, 4rem);
+   
 }
 
 /* Grid Ambiental */
@@ -283,12 +284,110 @@ p {
     margin-bottom: clamp(1rem, 1.2vw, 1.4rem);
 }
 
+/*Voluntarios*/
+.volunteer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.volunteer-content {
+    padding-right: 2rem;
+}
+
+
+
+.intro-text {
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+
+.benefits-list,
+.areas-list,
+.requirements-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.benefits-list li,
+.areas-list li,
+.requirements-list li {
+    margin-bottom: 0.5rem;
+    font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.benefits-list li::before,
+.areas-list li::before,
+.requirements-list li::before {
+    content: "✅";
+    margin-right: 0.5rem;
+}
+
+.image-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    height: fit-content;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+    object-fit: cover;
+}
+
+.cta-text {
+    font-size: clamp(1.1rem, 1.3vw, 1.3rem);
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #5CFF87;
+    color: #000;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4BDD72;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .volunteer-content {
+        padding-right: 0;
+    }
+}
+
 /* FAQ */
 .faq-section {
     max-width: clamp(800px, 80vw, 900px);
     margin: 0 auto;
     padding: clamp(2rem, 2.5vw, 3rem);
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.8rem, 2vw, 2rem);
+    line-height: clamp(2rem, 2.2vw, 2.2rem);
+    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
    
 }
 .details {
@@ -304,10 +403,67 @@ p {
 }
 
 /* Mapa */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    align-items: start;
+    margin-bottom: 100px;
+}
+
+.directions-content {
+    padding-right: 2rem;
+}
+
+h2 {
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+.intro-text {
+    margin-bottom: 1.5rem;
+}
+
+.address {
+    margin-bottom: 1.5rem;
+}
+
+.transport-options {
+    list-style: none;
+}
+
+.transport-options li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    font-size: clamp(1.8rem, 2vw, 2rem);
+    line-height: clamp(2rem, 2.2vw, 2.2rem);
+    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+}
+
 .map-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    height: fit-content;
+}
+
+.map-container img {
     width: 100%;
-    height: clamp(300px, 30vw, 400px);
-    margin: clamp(2rem, 2.5vw, 3rem) 0;
+    height: auto;
+    border-radius: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .directions-content {
+        padding-right: 0;
+    }
 }
 
 /* ==========================================================================
@@ -316,6 +472,7 @@ p {
 footer {
     background: var(--agua);
     padding: clamp(40px, 5vw, 60px) 0;
+    margin-top: 100px;
 }
 
 .footer-content {
@@ -496,7 +653,8 @@ footer span,
     display: flex;
     justify-content: space-evenly;
     height: 100vh;
-    margin-top: 200px;
+    padding-top: 200px;
+    margin: auto;
    }
 
    .error-left {
