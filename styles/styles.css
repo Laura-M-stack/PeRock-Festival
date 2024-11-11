@@ -552,6 +552,10 @@ footer span,
     align-self: center;
 }
 
+.footer-section-logo .black_logo {
+    padding: 20px;
+}
+
 .footer-section p {
     margin-bottom: clamp(10px, 1.2vw, 14px);
 }
