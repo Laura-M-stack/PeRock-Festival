@@ -318,6 +318,8 @@ display: flex;
 
 .volunteer-content {
     padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -371,6 +373,9 @@ display: flex;
     border-radius: 1.5rem;
     object-fit: cover;
    
+}
+.cta-voluntarios {
+    margin: 50%;
 }
 
 
