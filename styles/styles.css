@@ -271,6 +271,7 @@ p {
 
 #env1 {
 display: flex;
+
 }
 
 #env2{
@@ -279,6 +280,10 @@ display: flex;
 
 #env3 {
 display: flex;
+}
+
+.text-right {
+    line-height: ;
 }
 
 /* Testimonios */
@@ -318,7 +323,9 @@ display: flex;
 
 
 .intro-text {
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    font-size: clamp(1.8rem, 2vw, 2rem);
+    line-height: clamp(2rem, 2.2vw, 2.2rem);
+    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
     margin-bottom: 2rem;
     line-height: 1.5;
 }
@@ -335,7 +342,9 @@ display: flex;
 .areas-list li,
 .requirements-list li {
     margin-bottom: 0.5rem;
-    font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+    font-size: clamp(1.8rem, 2vw, 2rem);
+    line-height: clamp(2rem, 2.2vw, 2.2rem);
+    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
@@ -362,29 +371,7 @@ display: flex;
     object-fit: cover;
 }
 
-.cta-text {
-    font-size: clamp(1.1rem, 1.3vw, 1.3rem);
-    margin-bottom: 1rem;
-}
 
-.cta-button {
-    display: inline-block;
-    background-color: #5CFF87;
-    color: #000;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
-    margin-top: 1rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #4BDD72;
-}
 
 @media (max-width: 768px) {
     .container {
