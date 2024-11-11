@@ -359,7 +359,6 @@ display: flex;
 }
 
 .image-container {
-    background: white;
     padding: 1rem;
     border-radius: 2rem;
     height: 100%;
@@ -373,6 +372,7 @@ display: flex;
     height: auto;
     border-radius: 1.5rem;
     align-self: center;
+    border: solid var(--verde-brillante) 2px;
 
 }
 .cta-voluntarios {
