@@ -725,10 +725,12 @@ footer span,
 
    .container-error {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100vh;
     padding-top: 200px;
-    margin: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 120px;
    }
 
    .error-left {
@@ -737,13 +739,12 @@ footer span,
 
    .error-left h1 {
     font-size: 72px;
-
+    font-weight: 500;
+    margin-bottom: 24px;
    }
 
    .error-left p {
-    line-height: clamp(4rem, 4.2vw, 4.2rem);
+    line-height: clamp(3rem, 3.2vw, 3.2rem);
    }
 
-   .error-right {
-    align-items:flex-end;
-   }
+   
