@@ -42,8 +42,8 @@ h1, h2, h3, p, .footer {
 }
 
 h1, h2, h3 {
-    margin-bottom: clamp(4rem, 4.2vw, 4.2rem);
-    margin-top: clamp(4rem, 4.2vw, 4.2rem);
+    margin-bottom: clamp(5rem, 5.2vw, 5.2rem);
+    margin-top: clamp(7rem, 7.2vw, 7.2rem);
 }
 
 h1 {
@@ -58,7 +58,6 @@ h2 {
     font-size: clamp(2.8rem, 3.2vw, 3.2rem);
     line-height: clamp(2.8rem, 3.2vw, 3.2rem);
     letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
-    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -229,39 +228,27 @@ p {
    5. Componentes de Contenido
    ========================================================================== */
 /* Sección Polaroid */
-.polaroid-container {
+.polaroids-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
     margin-top: 2rem;
+    margin-left: 120px;
+    margin-right: 150px;
 }
 
-.polaroid-group {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.polaroids-container .polaroids {
+    width: 100px;
 }
 
-.image-1,
-.image-2,
-.image-3 {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
+.polaroids-container .text-right {
+    width: 350px;
 }
 
-@media (max-width: 768px) {
-    .image-container {
-        flex-direction: column;
-        gap: 3rem;
-    }
 
-    .image-group {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
+
+
 
 /* Botones */
 .button {
@@ -283,29 +270,21 @@ p {
 }
 
 /* Grid Ambiental */
-.environmental-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 25vw, 300px), 1fr));
-    /*gap: clamp(2rem, 2.5vw, 3rem);*/
-    margin: clamp(2rem, 2.5vw, 3rem) 0;
+
+.environment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 
-#env1 {
-display: flex;
+.environment .text-right {
+    width: 400px;
 
-}
-
-#env2{
-display: flex;
-}
-
-#env3 {
-display: flex;
-}
-
-.text-right {
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
 }
 
 /* Testimonios */
@@ -316,7 +295,7 @@ display: flex;
     padding: clamp(2rem, 2.5vw, 3rem);
     font-size: clamp(1.4rem, 1.8vw, 1.8rem);
     line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);: 
+    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
 }
 
 .testimonial-card {
@@ -337,6 +316,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
+    margin-top: 80px;
 }
 
 /*Voluntarios*/
@@ -471,9 +451,6 @@ display: flex;
     padding-right: 2rem;
 }
 
-h2 {
-    margin-bottom: clamp(1rem, 2vw, 2rem);
-}
 
 .intro-text {
     margin-bottom: 1.5rem;
