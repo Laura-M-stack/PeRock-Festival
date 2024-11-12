@@ -668,6 +668,7 @@ main {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
 
 .art-img img {
 	width: 400px;
@@ -677,8 +678,15 @@ main {
 }
 
 .art-text {
-	width: 300px;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.art-text p {
+	display: inline-block;
+	width: 33%;
+	align-self: center;
 }
 
 /* ==========================================================================
