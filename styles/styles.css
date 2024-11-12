@@ -295,7 +295,7 @@ p {
 	padding: clamp(1rem, 1.2vw, 1.4rem);
 }
 
-.testimonial-card img {
+.testimonial-card .testimonial-img {
 	width: clamp(140px, 14vw, 160px);
 	height: clamp(160px, 16vw, 160px);
 	border-radius: 50%;
