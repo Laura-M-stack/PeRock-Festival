@@ -5,211 +5,217 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 :root {
-    /* Colores */
-    --azul-profundo: #000a57;
-    --verde-brillante: #74f78d;
-    --blanco: #ffffff;
-    --gris-claro: #d1d0d7;
-    --agua: #6cdfea;
-    --verde-sereno: #83af9b;
-    --negro: #000000;
-    --acordeón: #00073a;
-    --rojo-carmesi: #ed0131;
-    --agua-80: rgba(108, 223, 234, 0.8);
-    
-    /* Tipografía base */
-    font-size: 62.5%;
-    font-family: Montserrat, sans-serif;
+	/* Colores */
+	--azul-profundo: #000a57;
+	--verde-brillante: #74f78d;
+	--blanco: #ffffff;
+	--gris-claro: #d1d0d7;
+	--agua: #6cdfea;
+	--verde-sereno: #83af9b;
+	--negro: #000000;
+	--acordeón: #00073a;
+	--rojo-carmesi: #ed0131;
+	--agua-80: rgba(108, 223, 234, 0.8);
+
+	/* Tipografía base */
+	font-size: 62.5%;
+	font-family: Montserrat, sans-serif;
 }
 
 /* ==========================================================================
    2. Reset y Estilos Base
    ========================================================================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    background-color: var(--azul-profundo);
-    color: var(--blanco);
-    font-family: inherit;
+	background-color: var(--azul-profundo);
+	color: var(--blanco);
+	font-family: inherit;
 }
 
-h1, h2, h3, p, .footer {
-    font-family: inherit;
+h1,
+h2,
+h3,
+p,
+.footer {
+	font-family: inherit;
 }
 
-h1, h2, h3 {
-    margin-bottom: clamp(3rem, 3.2vw, 3.2rem);
-    margin-top: clamp(5rem, 5.2vw, 5.2rem);
+h1,
+h2,
+h3 {
+	margin-bottom: clamp(3rem, 3.2vw, 3.2rem);
+	margin-top: clamp(5rem, 5.2vw, 5.2rem);
 }
 
 h1 {
-    font-size: clamp(3.6rem, 4vw, 4rem);
-    line-height: clamp(3.6rem, 4vw, 4rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
-    margin-top: clamp(1rem, 1.2vw, 1.2rem);
-    text-align: center;
+	font-size: clamp(3.6rem, 4vw, 4rem);
+	line-height: clamp(3.6rem, 4vw, 4rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	margin-top: clamp(1rem, 1.2vw, 1.2rem);
+	text-align: center;
 
 }
 
 h2 {
-    font-size: clamp(2.8rem, 3.2vw, 3.2rem);
-    line-height: clamp(2.8rem, 3.2vw, 3.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
-    display: flex;
-    justify-content: center;
+	font-size: clamp(2.8rem, 3.2vw, 3.2rem);
+	line-height: clamp(2.8rem, 3.2vw, 3.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	display: flex;
+	justify-content: center;
 }
 
 h3 {
-    font-size: clamp(2.2rem, 2.4vw, 2.4rem);
-    line-height: clamp(3.2rem, 3.4vw, 3.4rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	font-size: clamp(2.2rem, 2.4vw, 2.4rem);
+	line-height: clamp(3.2rem, 3.4vw, 3.4rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
 }
 
 p {
-    font-size: clamp(1.8rem, 2vw, 2rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	font-size: clamp(1.8rem, 2vw, 2rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
 }
 
 .footer {
-    font-size: clamp(1.8rem, 2vw, 2rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	font-size: clamp(1.8rem, 2vw, 2rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
 }
 
 /* ==========================================================================
    3. Componentes de Navegación
    ========================================================================== */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,10,87,1) 100%); 
-    padding: clamp(0.4rem, 0.8vw, 1rem);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
+	background-color: rgba(0, 0, 0, 0.5);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 10, 87, 1) 100%);
+	padding: clamp(0.4rem, 0.8vw, 1rem);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .logo {
-    height: clamp(45px, 5.3vw, 55px);
+	height: clamp(45px, 5.3vw, 55px);
 }
 
 .nav-links {
-    display: flex;
-    gap: clamp(5.2rem, 5.7vw, 6.2rem);
+	display: flex;
+	gap: clamp(5.2rem, 5.7vw, 6.2rem);
 }
 
 .nav-links a {
-    color: var(--blanco);
-    text-decoration: none;
-    font-size: clamp(2rem, 2.2vw, 2.2rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	color: var(--blanco);
+	text-decoration: none;
+	font-size: clamp(2rem, 2.2vw, 2.2rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
 }
 
 .nav-links a:hover {
-    color: var(--verde-brillante);
-    text-decoration: underline;
+	color: var(--verde-brillante);
+	text-decoration: underline;
 }
 
 .button:hover {
 
-    background-color: #56BB6A;
+	background-color: #56BB6A;
 }
 
 .button:focus {
 
-    background-color: #74F78D;
-    opacity: 46%;
+	background-color: #74F78D;
+	opacity: 46%;
 }
 
 
 /* ==========================================================================
    4. Sección Hero
    ========================================================================== */
- 
- 
- :root {
-   --padding-base: clamp(1rem, 2vw, 2rem);
- }
- 
- .hero {
-   position: relative;
-   min-height: 100vh;
-   background-image: url('/images/fondo_home.jpg');
-   background-size: cover;
-   background-position: center;
- }
- 
- .hero-overlay {
-   position: absolute;
-   inset: 0;
-   background-color: rgba(3, 2, 71, 0.7);
- }
- 
- .hero-container {
-   position: relative;
-   z-index: 1;
-   max-width: clamp(320px, 90vw, 1200px);
-   margin: 0 auto;
-   padding: var(--padding-base);
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   min-height: 100vh;
-   gap: clamp(1rem, 4vw, 4rem);
- }
- 
- .hero-content {
-   color: white;
-   flex: 1;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
- }
- 
- .festival-title {
-   font-size: clamp(5rem, 8vw, 7rem);
-   font-weight: bold;
-   margin: 0;
-   line-height: 1;
-   margin-bottom: 20px;
- }
- 
- .festival-subtitle {
-   font-size: clamp(1.5rem, 3vw, 2.4rem);
-   margin: 0;
-   font-family: "Rock Salt";
-   letter-spacing: 3px;
-   justify-content: flex-start;
-   margin-top: 20px;
-   margin-bottom: 32px;
- }
- 
- .festival-info {
-   margin-bottom: clamp(1.5rem, 4vw, 2rem);
- }
- 
- .festival-info p {
-    font-size: clamp(1.5rem, 3vw, 2.4rem);
-    margin: clamp(0.3rem, 1vw, 0.5rem) 0;
-    letter-spacing: 1px;
-    text-align: center;
-    line-height: 1.2;
- }
- 
- .dj-image {
-   width: 100%;
-   border-radius: clamp(2px, 0.5vw, 4px);
-   margin-bottom: clamp(0.5rem, 1vw, 1rem);
- }
- 
+
+
+:root {
+	--padding-base: clamp(1rem, 2vw, 2rem);
+}
+
+.hero {
+	position: relative;
+	min-height: 100vh;
+	background-image: url('/images/fondo_home.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-overlay {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(3, 2, 71, 0.7);
+}
+
+.hero-container {
+	position: relative;
+	z-index: 1;
+	max-width: clamp(320px, 90vw, 1200px);
+	margin: 0 auto;
+	padding: var(--padding-base);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
+	gap: clamp(1rem, 4vw, 4rem);
+}
+
+.hero-content {
+	color: white;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.festival-title {
+	font-size: clamp(5rem, 8vw, 7rem);
+	font-weight: bold;
+	margin: 0;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+.festival-subtitle {
+	font-size: clamp(1.5rem, 3vw, 2.4rem);
+	margin: 0;
+	font-family: "Rock Salt";
+	letter-spacing: 3px;
+	justify-content: flex-start;
+	margin-top: 20px;
+	margin-bottom: 32px;
+}
+
+.festival-info {
+	margin-bottom: clamp(1.5rem, 4vw, 2rem);
+}
+
+.festival-info p {
+	font-size: clamp(1.5rem, 3vw, 2.4rem);
+	margin: clamp(0.3rem, 1vw, 0.5rem) 0;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.2;
+}
+
+.dj-image {
+	width: 100%;
+	border-radius: clamp(2px, 0.5vw, 4px);
+	margin-bottom: clamp(0.5rem, 1vw, 1rem);
+}
+
 .hero h1 {
-    font-family: "Rock Salt";
+	font-family: "Rock Salt";
 
 }
 
@@ -218,456 +224,476 @@ p {
    ========================================================================== */
 /* Sección Polaroid */
 .polaroids-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
-    margin-left: 120px;
-    margin-right: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 2rem;
+	margin-left: 120px;
+	margin-right: 150px;
 }
 
 .polaroids-container .polaroids {
-    width: 100px;
+	width: 100px;
 }
 
 .polaroids-container .text-right {
-    width: 350px;
+	width: 350px;
 }
-
-
-
 
 
 /* Botones */
 .button {
-    background-color: var(--verde-brillante);
-    color: var(--negro);
-    padding: clamp(1rem, 1.2vw, 1.4rem) clamp(2.5rem, 3vw, 3.5rem);
-    border-radius: clamp(8px, 0.7vw, 12px);
-    text-decoration: none;
-    display: inline-block;
-    margin: clamp(1rem, 1.2vw, 1.4rem) 0;
-    font-size: x-large;
-    font-weight:600;
+	background-color: var(--verde-brillante);
+	color: var(--negro);
+	padding: clamp(1rem, 1.2vw, 1.4rem) clamp(2.5rem, 3vw, 3.5rem);
+	border-radius: clamp(8px, 0.7vw, 12px);
+	text-decoration: none;
+	display: inline-block;
+	margin: clamp(1rem, 1.2vw, 1.4rem) 0;
+	font-size: x-large;
+	font-weight: 600;
 }
 
 /* Secciones Generales */
 .section {
-    padding: clamp(4rem, 5vw, 6rem) clamp(2rem, 3vw, 4rem);
-   
+	padding: clamp(4rem, 5vw, 6rem) clamp(2rem, 3vw, 4rem);
+
 }
 
 /* Grid Ambiental */
 
 .environment {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
-    margin-left: 100px;
-    margin-right: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 2rem;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 
 .environment .text-right {
-    width: 400px;
+	width: 400px;
 
 }
 
 /* Testimonios */
 .testimonials {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 20vw, 250px), 1fr));
-    gap: clamp(2rem, 2.5vw, 3rem);
-    padding: clamp(2rem, 2.5vw, 3rem);
-    font-size: clamp(1.4rem, 1.8vw, 1.8rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 20vw, 250px), 1fr));
+	gap: clamp(2rem, 2.5vw, 3rem);
+	padding: clamp(2rem, 2.5vw, 3rem);
+	font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
 }
 
 .testimonial-card {
-    text-align: center;
-    padding: clamp(1rem, 1.2vw, 1.4rem);
+	text-align: center;
+	padding: clamp(1rem, 1.2vw, 1.4rem);
 }
 
 .testimonial-card img {
-    width: clamp(140px, 14vw, 160px);
-    height: clamp(160px, 16vw, 160px);
-    border-radius: 50%;
-    margin-bottom: clamp(1rem, 1.2vw, 1.4rem);
+	width: clamp(140px, 14vw, 160px);
+	height: clamp(160px, 16vw, 160px);
+	border-radius: 50%;
+	margin-bottom: clamp(1rem, 1.2vw, 1.4rem);
 }
 
 /*aliados*/
 .aliados {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-    margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+	margin-top: 60px;
 }
 
 /*Voluntarios*/
 .volunteer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+	align-items: start;
 }
 
 .volunteer-content {
-    padding-right: 2rem;
-   
+	padding-right: 2rem;
+
 }
 
 .volunteer-content h3 {
-    display: flex;
-    justify-content: left;
-    margin-top: 50px;
-    margin-bottom: 20px;
+	display: flex;
+	justify-content: left;
+	margin-top: 50px;
+	margin-bottom: 20px;
 
 }
 
 
-
 .intro-text {
-    font-size: clamp(1.8rem, 2vw, 2rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
-    margin-bottom: 2rem;
-    line-height: 1.5;
+	font-size: clamp(1.8rem, 2vw, 2rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	margin-bottom: 2rem;
+	line-height: 1.5;
 }
 
 
 .benefits-list,
 .areas-list,
 .requirements-list {
-    list-style: none;
-    margin-bottom: 2rem;
+	list-style: none;
+	margin-bottom: 2rem;
 }
 
 .benefits-list li,
 .areas-list li,
 .requirements-list li {
-    margin-bottom: 0.5rem;
-    font-size: clamp(1.8rem, 2vw, 2rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-size: clamp(1.8rem, 2vw, 2rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
 }
 
 .benefits-list li::before,
 .areas-list li::before,
 .requirements-list li::before {
-    content: "✅";
-    margin-right: 0.5rem;
+	content: "✅";
+	margin-right: 0.5rem;
 }
 
 .image-container {
-    padding: 1rem;
-    border-radius: 2rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	padding: 1rem;
+	border-radius: 2rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 1.5rem;
-    align-self: center;
-    border: solid var(--verde-brillante) 2px;
+	width: 100%;
+	height: auto;
+	border-radius: 1.5rem;
+	align-self: center;
+	border: solid var(--verde-brillante) 2px;
 
 }
-.cta-voluntarios {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
 
+.cta-voluntarios {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 @media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
+	.container {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
 
-    .volunteer-content {
-        padding-right: 0;
-    }
+	.volunteer-content {
+		padding-right: 0;
+	}
 }
 
 /* FAQ */
 .faq-section {
-    max-width: clamp(800px, 80vw, 900px);
-    margin: 0 auto;
-    padding: clamp(2rem, 2.5vw, 3rem);
-    font-size: clamp(1.8rem, 2vw, 2rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
-    margin-bottom: 80px;
-   
+	max-width: clamp(800px, 80vw, 900px);
+	margin: 0 auto;
+	padding: clamp(2rem, 2.5vw, 3rem);
+	font-size: clamp(1.8rem, 2vw, 2rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	margin-bottom: 80px;
+
 }
+
 .details {
-    padding: clamp(1rem, 1.2vw, 1.4rem);
-};
+	padding: clamp(1rem, 1.2vw, 1.4rem);
+}
+
+;
 
 .summary {
-    padding: clamp(1rem, 1.2vw, 1.4rem);   
+	padding: clamp(1rem, 1.2vw, 1.4rem);
 }
 
 .answer {
-    padding: clamp(1rem, 1.2vw, 1.4rem);   
+	padding: clamp(1rem, 1.2vw, 1.4rem);
 }
 
 /* Mapa */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    gap: 10rem;
-    margin-bottom: 80px;
-    margin-top: 80px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	gap: 10rem;
+	margin-bottom: 80px;
+	margin-top: 80px;
 }
 
 .directions-content {
-    padding-right: 2rem;
+	padding-right: 2rem;
 }
 
 
 .intro-text {
-    margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .address {
-    margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .transport-options {
-    list-style: none;
+	list-style: none;
 }
 
 .transport-options li {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: flex-start;
-    font-size: clamp(1.8rem, 2vw, 2rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: flex-start;
+	font-size: clamp(1.8rem, 2vw, 2rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
 }
 
 .map-container {
-    padding: 1rem;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+	padding: 1rem;
+	border-radius: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 }
 
 .map-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 2rem;
-    border: solid var(--verde-brillante) 3px;
+	width: 100%;
+	height: auto;
+	border-radius: 2rem;
+	border: solid var(--verde-brillante) 3px;
 
 }
 
 @media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
+	.container {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
 
-    .directions-content {
-        padding-right: 0;
-    }
+	.directions-content {
+		padding-right: 0;
+	}
 }
 
 /* ==========================================================================
    6. Footer
    ========================================================================== */
 footer {
-    background: var(--agua-80);
-    padding: clamp(40px, 5vw, 60px) 0;
+	background: var(--agua-80);
+	padding: clamp(40px, 5vw, 60px) 0;
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 20vw, 250px), 1fr));
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 20vw, 250px), 1fr));
 }
 
 /* Estilos compartidos del footer */
-footer, 
-footer h3, 
-footer p, 
-footer a, 
-footer li, 
+footer,
+footer h3,
+footer p,
+footer a,
+footer li,
 footer span,
 .footer-section,
 .legal-links a,
 .separator,
 .footer-bottom p {
-    color: var(--negro);
-    background-color: var(--agua);
-    font-family: inherit;
-    text-align: center;
+	color: var(--negro);
+	background-color: var(--agua);
+	font-family: inherit;
+	text-align: center;
 }
-    
+
 
 .footer-section h3 {
-    margin-bottom: clamp(20px, 2.5vw, 30px);
-    font-weight: bold;
-    text-align: left;
+	margin-bottom: clamp(20px, 2.5vw, 30px);
+	font-weight: bold;
+	text-align: left;
 }
 
 .footer-section-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer-section-logo h3 {
-    align-self: center;
+	align-self: center;
 }
 
 .footer-section-logo .black_logo {
-    padding: 20px;
+	padding: 20px;
 }
 
 .footer-section p {
-    margin-bottom: clamp(10px, 1.2vw, 14px);
+	margin-bottom: clamp(10px, 1.2vw, 14px);
 }
 
 .footer-section ul {
-    list-style: none;
+	list-style: none;
 }
 
 .footer-section ul li {
-    margin-bottom: clamp(10px, 1.2vw, 14px);
-    font-size: clamp(1.6rem, 2vw, 2rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
-    text-align: left;
+	margin-bottom: clamp(10px, 1.2vw, 14px);
+	font-size: clamp(1.6rem, 2vw, 2rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	text-align: left;
 }
 
 .footer-section a {
-    text-decoration: none;
-    font-size: clamp(1.4rem, 1.8vw, 1.8rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	text-decoration: none;
+	font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
 }
 
 .footer-section a:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .footer-bottom {
-    text-align: center;
-    padding-top: 0px;
+	text-align: center;
+	padding-top: 0px;
 }
 
 .legal-links {
-    text-align: center;
-    margin: clamp(10px, 1.2vw, 14px) 0;
-    font-size: clamp(1.4rem, 1.8vw, 1.8rem);
-    line-height: clamp(2rem, 2.2vw, 2.2rem);
-    letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
-    text-decoration: none;
+	text-align: center;
+	margin: clamp(10px, 1.2vw, 14px) 0;
+	font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+	line-height: clamp(2rem, 2.2vw, 2.2rem);
+	letter-spacing: clamp(-0.08rem, -0.1vw, -0.1rem);
+	text-decoration: none;
 }
 
 
 .separator {
-    margin: 0 clamp(10px, 1.2vw, 14px);
+	margin: 0 clamp(10px, 1.2vw, 14px);
 }
 
 
 .black_logo {
-    width: 220px;
-    align-self: center;
+	width: 220px;
+	align-self: center;
 }
 
 /* ==========================================================================
    8. Media Queries
    ========================================================================== */
 @media (max-width: 768px) {
-    .grid-container,
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
 
-    .footer-section {
-        text-align: center;
-    }
+	.grid-container,
+	.footer-content {
+		grid-template-columns: 1fr;
+	}
+
+	.footer-section {
+		text-align: center;
+	}
 }
- /* Responsive layout */
- @media (max-width: 768px) {
-    .hero-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .dj-card {
-      width: clamp(250px, 80vw, 300px);
-    }
-  }
 
-  /* ==========================================================================
+/* Responsive layout */
+@media (max-width: 768px) {
+	.hero-container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.dj-card {
+		width: clamp(250px, 80vw, 300px);
+	}
+}
+
+/* ==========================================================================
    8. Página Artistas
    ========================================================================== */
-   .mySlides {
-    display:none;
-   
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-   .w3-left, .w3-right, .w3-badge {
-    cursor:pointer;
-}
-   .w3-badge {
-    height:20px;
-    width:13px;
-    padding:0
+;
+
+.mySlides {
+	display: none;
+	align-self: center;
+
 }
 
-.artistas desc {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 50px;
+.w3-left,
+.w3-right,
+.w3-badge {
+	align-self: center;
+	cursor: pointer;
 }
+
+.w3-badge {
+	height: 20px;
+	width: 13px;
+	padding: 0
+}
+
+.artistas-desc {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-bottom: 50px;
+}
+
+.art-img {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 
 .art-img img {
-    width: 400px;
-    border-radius: 15px;
-    border: solid var(--verde-brillante) 2px;
-    
+	width: 400px;
+	border-radius: 15px;
+	border: solid var(--verde-brillante) 2px;
+
 }
 
 .art-text {
-    width: 300px;
-}
-  
-   /* ==========================================================================
-   9. Página Productos
-   ========================================================================== */
-.h1-products {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 300px;
+	display: flex;
 }
 
-   .container-products {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 60px;
+/* ==========================================================================
+9. Página Productos
+========================================================================== */
+.h1-products {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-products {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 60px;
 }
 
 .right-content-products {
@@ -676,102 +702,101 @@ footer span,
 	justify-content: space-around;
 }
 
-.container-products p, h3 {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+.container-products p,
+h3 {
+	justify-content: center;
+	text-align: center;
+	align-items: center;
 }
 
 .dog-img {
 	align-self: center;
-    width: 3oopx;
-    height: 232px;
-    margin: auto;
+	width: 3oopx;
+	height: 232px;
+	margin: auto;
 }
-
-
 
 
 .moodboard {
-    width: 427px;
-    height: 650px;
-    margin-bottom: 50px;
+	width: 427px;
+	height: 650px;
+	margin-bottom: 50px;
 }
 
-   /* ==========================================================================
-   10. Página Nosotros
-   ========================================================================== */
+/* ==========================================================================
+10. Página Nosotros
+========================================================================== */
 .h1-ong {
-    display: flex;
-    justify-content: center;
-    }
+	display: flex;
+	justify-content: center;
+}
 
 .ong-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .ong-container .text-left-ong {
-    
-    width: 400px;
+
+	width: 400px;
 
 }
 
 .ong-container .ong-dogs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 
- .dogs-grid {
-    margin-top: 50px;
-    margin-bottom: 20px;
+.dogs-grid {
+	margin-top: 50px;
+	margin-bottom: 20px;
 }
 
-   /* ==========================================================================
-   11. Página Actividades
-   ========================================================================== */
+/* ==========================================================================
+11. Página Actividades
+========================================================================== */
 
 .cards-container {
-    margin-top: 60px;
-    margin-bottom: 80px;
+	margin-top: 60px;
+	margin-bottom: 80px;
 }
+
 .actividades-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
-   /* ==========================================================================
-   12. Página Error 404
-   ========================================================================== */
 
-   .container-error {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    padding-top: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 120px;
-   }
+/* ==========================================================================
+12. Página Error 404
+========================================================================== */
 
-   .error-left {
-    align-items: flex-start;
-   }
+.container-error {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	padding-top: 200px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 120px;
+}
 
-   .error-left h1 {
-    font-size: 72px;
-    font-weight: 500;
-    margin-bottom: 24px;
-   }
+.error-left {
+	align-items: flex-start;
+}
 
-   .error-left p {
-    line-height: clamp(3rem, 3.2vw, 3.2rem);
-   }
+.error-left h1 {
+	font-size: 72px;
+	font-weight: 500;
+	margin-bottom: 24px;
+}
 
-   
+.error-left p {
+	line-height: clamp(3rem, 3.2vw, 3.2rem);
+}
