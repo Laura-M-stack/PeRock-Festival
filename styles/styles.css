@@ -771,6 +771,8 @@ h3 {
 .cards-container {
 	margin-top: 60px;
 	margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 .actividades-container {
