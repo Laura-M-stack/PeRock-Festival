@@ -15,7 +15,7 @@
 	--negro: #000000;
 	--acordeón: #00073a;
 	--rojo-carmesi: #ed0131;
-	--agua-80: #3bceff;
+	--agua-80: #3cb9e3;
 
 	/* Tipografía base */
 	font-size: 62.5%;
@@ -800,8 +800,8 @@ h3 {
 	justify-content: center;
 	height: 100vh;
 	padding-top: 200px;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 180px;
+	margin-right: 180px;
 	margin-bottom: 120px;
 }
 
@@ -813,8 +813,14 @@ h3 {
 	font-size: 72px;
 	font-weight: 500;
 	margin-bottom: 24px;
+	text-align: left;
+
 }
 
 .error-left p {
 	line-height: clamp(3rem, 3.2vw, 3.2rem);
+}
+
+.error-right {
+	width: 500px;
 }
