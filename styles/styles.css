@@ -15,7 +15,7 @@
 	--negro: #000000;
 	--acordeón: #00073a;
 	--rojo-carmesi: #ed0131;
-	--agua-80: rgba(108, 223, 234, 0.8);
+	--agua-80: #3bceff;
 
 	/* Tipografía base */
 	font-size: 62.5%;
@@ -521,7 +521,7 @@ footer span,
 .separator,
 .footer-bottom p {
 	color: var(--negro);
-	background-color: var(--agua);
+	background-color: var(--agua-80);
 	font-family: inherit;
 	text-align: center;
 }
