@@ -634,8 +634,8 @@ footer span,
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-left: 250px;
-	margin-right: 250px;
+	margin-left: 150px;
+	margin-right: 150px;
 }
 
 .mySlides {
@@ -664,17 +664,24 @@ footer span,
 	margin-bottom: 100px;
 }
 
-.art-img {
+.art-img-left {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: flex-start;
+
 }
 
-.art-img img {
-	width: 400px;
-	border-radius: 15px;
-	border: solid var(--verde-brillante) 2px;
+.art-img-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
 
+}
+
+.art-img-left .art-img-right img {
+	width: 300px;
 }
 
 .art-text {
@@ -685,7 +692,7 @@ footer span,
 
 .art-text p {
 	display: flex;
-	width: 60%;
+	width: 50%;
 	align-self: center;
 	
 }
