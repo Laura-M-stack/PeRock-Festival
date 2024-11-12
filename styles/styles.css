@@ -630,13 +630,13 @@ footer span,
 /* ==========================================================================
    8. Página Artistas
    ========================================================================== */
-main {
+.artistas-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-left: 250px;
+	margin-right: 250px;
 }
-
-;
 
 .mySlides {
 	display: none;
@@ -661,13 +661,13 @@ main {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .art-img {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .art-img img {
@@ -684,9 +684,10 @@ main {
 }
 
 .art-text p {
-	display: inline-block;
-	width: 33%;
+	display: flex;
+	width: 60%;
 	align-self: center;
+	
 }
 
 /* ==========================================================================
