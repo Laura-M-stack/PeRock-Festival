@@ -877,3 +877,60 @@ h3 {
 .error-right {
 	width: 500px;
 }
+
+
+/* ==========================================================================
+Media queries
+========================================================================== */
+
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .polaroids-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 40vh;
+        padding: 1rem;
+    }
+
+    .footer-section {
+        margin: 0.5rem;
+    }
+
+    .navbar a.button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
