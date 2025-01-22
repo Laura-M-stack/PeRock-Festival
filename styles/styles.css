@@ -19,7 +19,7 @@
 
 	/* Tipografía base */
 	font-size: 62.5%;
-	font-family: Montserrat, sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 /* ==========================================================================
@@ -32,7 +32,7 @@
 }
 
 body {
-	background-color: var(--azul-profundo);
+	background-image: linear-gradient(to right, #222d90, #1b2582, #141d75, #0b1568, #0b1568, #0b1568, #0b1568, #0b1568, #0b1568, #141d75, #1b2582, #222d90);
 	color: var(--blanco);
 	font-family: inherit;
 }
